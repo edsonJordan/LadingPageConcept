@@ -522,6 +522,14 @@ img{
     padding: 1rem 0;
     width: 100%;
 }
+.list:hover .link__navigation{
+    font-weight: 800;
+    color: var(--color__primary--500);
+}
+.link__navigation.active{
+    font-weight: 800;
+    color: var(--color__primary--500);
+}
 .link__navigation{
     color: var(--color__secondary--500);
 }
@@ -664,8 +672,26 @@ img{
 
 
 
+.none{
+    display: none;
+}
 @media (min-width : 768px){    
-
+    .ul__navigation{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: initial;
+        column-gap: 40px;
+    }
+    .list{
+        min-width: fit-content;
+    }
+    .ul__navigation::after{
+        display: none;
+    }
+    .navigation__button{
+        display: none;
+    }
     .card{
         max-width: 420px;
     }
@@ -738,7 +764,7 @@ img{
 @media (min-width:1024px){
     .section{
         flex-direction: row;
-        min-height: 75vh;
+        min-height: 80vh;
         overflow: hidden;
     }
     .section__reimagining{
@@ -816,7 +842,3 @@ img{
 }
 
 
-
-.none{
-    display: none;
-}
