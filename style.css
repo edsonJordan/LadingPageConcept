@@ -693,7 +693,8 @@ img{
         display: none;
     }
     .card{
-        max-width: 420px;
+        min-width: 335px;
+        max-width: 427px;
     }
     .content__cards{
         align-items: center;
@@ -765,7 +766,6 @@ img{
     .section{
         flex-direction: row;
         min-height: 80vh;
-        overflow: hidden;
     }
     .section__reimagining{
         flex-direction: column;
